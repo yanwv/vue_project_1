@@ -8,8 +8,14 @@ import './assets/fonts/iconfont.css'
 import '../src/assets/css/global.css'
 
 import axios from 'axios'
+
 // 配置请求根路径
 axios.defaults.baseURL = 'http://127.0.0.1:8888/api/private/v1/'
+// axios请求拦截
+axios.interceptors.request.use(config => {
+  config.headers.Authorization = window.sessionStorage.getItem('token')
+  return config
+})
 Vue.prototype.$http = axios  // 全局挂载  其他组件可直接使用$http
 
 Vue.config.productionTip = false
