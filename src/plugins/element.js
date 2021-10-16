@@ -4,7 +4,7 @@ import {
   Header, Aside, Main, Menu, Submenu, MenuItem, Breadcrumb,
   BreadcrumbItem, Card, Row, Col, Table, TableColumn, Switch,
   Tooltip, Pagination, Dialog, MessageBox, Tag, Tree, Select,
-  Option
+  Option, Cascader
 } from 'element-ui'
 
 Vue.use(Button)
@@ -33,6 +33,7 @@ Vue.use(Tag)
 Vue.use(Tree)
 Vue.use(Option)
 Vue.use(Select)
+Vue.use(Cascader)
 
 // 全局挂载
 Vue.prototype.$message = Message
