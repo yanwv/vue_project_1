@@ -100,7 +100,6 @@
             v-model="selectedKeys"
             @change="parentCateChanged"
             clearable
-            change-on-select
           >
           </el-cascader>
         </el-form-item>
